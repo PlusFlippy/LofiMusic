@@ -34,7 +34,7 @@ Find all the commands available on this panel.
 `)
     .addField('<:music:978932582978838538> **Music**', `\`play\`, \`pause\`, \`stop\`, \`song\`, \`resume\`, \`skip\``)
     .addField('<:settings:978931782160351262> **Config**', `\`setprefix\`, \`premium\``)
-    .addField('<:info:978931782248448000> **Info**', `\`help\`, \`invite\``)
+    .addField('<:info:978931782248448000> **Info**', `\`help\`, \`invite\`, \`uptime\``)
     .setColor(color)
       .setThumbnail('https://images-ext-1.discordapp.net/external/I9ZqKEBG5F4M8ffRNnGU_P-ge_DBR3Jk4bLdqafXJzw/https/cdn.discordapp.com/avatars/900246137397723156/0e03b63d2867266f8c874316a90bdb0f.webp')
 
