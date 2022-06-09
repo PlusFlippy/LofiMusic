@@ -13,22 +13,7 @@ module.exports = {
         description: 'Repeats all songs in the queue',
         usage: " ",
         accessableby: "everyone",
-        premium: true,
     run: async (client, message, args, ops) => {
-
-        
-const db =require("quick.db");
-let color = db.get(`color_${message.author.id}`);
-  if(color === null) color = "#EFB9BE";
-
-          let supreme = new MessageEmbed()
-      .setDescription(`${on} **24/7 mode is enabled.** \n ${bnn}${pr} Premium Command`)
-      .setColor(color)
-
-        let supreme1 = new MessageEmbed()
-      .setDescription(`${off} **24/7 mode is disabled.** \n ${bnn}${pr} Premium Command`)
-      .setColor(color)
-
       
         const { channel } = message.member.voice;
         if (!channel) return message.channel.send('You need to be in a voice channel to loop music!');

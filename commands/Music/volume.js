@@ -6,7 +6,6 @@ module.exports = {
         description: 'Shows and changes volume.',
         usage: ', vol [volume]',
         accessableby: "everyone",
-        premium: true,
     run: async (bot, message, args, ops) => {
        if(isNaN(args[0])) {
                 return message.channel.send(`Invalid Volume provided!`)

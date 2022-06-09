@@ -17,7 +17,6 @@ module.exports = {
         category: "music",
         usage: '[song (name | link)]',
         accessableby: "everyone",
-        premium: false,
     run: async (client, message, args, ops) => {
 
 

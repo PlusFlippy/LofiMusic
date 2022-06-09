@@ -11,7 +11,6 @@ module.exports = {
   name: "invite",
   aliases: ["support"],
   description: "Information",
-  premium: false,
 
   run: async (client, message, args) => {
      

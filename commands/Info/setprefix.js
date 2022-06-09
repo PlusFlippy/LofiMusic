@@ -15,7 +15,6 @@ module.exports = {
         description: "Sets Custom Prefix",
         usage: "[prefix]",
         accessableby: 'Administrators',
-        premium: false,
     run: async (client, message, args) => {
         if (!message.member.hasPermission('ADMINISTRATOR')) return message.channel.send("You Do Not Permission to change my prefix!")
         

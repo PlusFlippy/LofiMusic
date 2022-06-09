@@ -5,7 +5,6 @@ module.exports = {
   name: "uptime",
   aliases: [],
   description: "Information",
-  premium: false,
 
   run: async (client, message, args) => {
     const a = moment.duration(client.uptime);

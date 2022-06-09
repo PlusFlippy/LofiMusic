@@ -15,7 +15,6 @@ module.exports = {
         description: 'Now playing command',
         usage: "Shows current song playing",
         accessableby: "everyone",
-        premium: false,
     run: async (bot, message, args, ops) => {
         try {
           const db =require("quick.db");

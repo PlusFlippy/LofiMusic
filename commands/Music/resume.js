@@ -8,7 +8,7 @@ module.exports = {
         description: 'resumes music',
         usage: " ",
         accessableby: "everyone",
-        premium: false,
+      
     run: async (bot, message, args, ops) => {
         const { channel } = message.member.voice;
         if (!channel) return message.channel.send('You need to be in a voice channel to resume music!');

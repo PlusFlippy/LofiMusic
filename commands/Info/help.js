@@ -17,7 +17,6 @@ module.exports = {
         category: "music",
         usage: '[song (name | link)]',
         accessableby: "everyone",
-        premium: false,
     run: async (client, message, args, ops) => {
 
 
@@ -33,16 +32,11 @@ Welcome to LofiMusic's help.
 Find all the commands available on this panel.
 `)
     .addField('<:music:978932582978838538> **Music**', `\`play\`, \`pause\`, \`stop\`, \`song\`, \`resume\`, \`skip\``)
-    .addField('<:settings:978931782160351262> **Config**', `\`setprefix\`, \`premium\``)
+    .addField('<:settings:978931782160351262> **Config**', `\`setprefix\``)
     .addField('<:info:978931782248448000> **Info**', `\`help\`, \`invite\`, \`uptime\``)
     .setColor(color)
       .setThumbnail('https://images-ext-1.discordapp.net/external/I9ZqKEBG5F4M8ffRNnGU_P-ge_DBR3Jk4bLdqafXJzw/https/cdn.discordapp.com/avatars/900246137397723156/0e03b63d2867266f8c874316a90bdb0f.webp')
 
-     let nb3 = new MessageButton()
-    .setLabel(`Premium`)
-    .setEmoji(`979290476777701397`)
-    .setStyle("url")
-     .setURL(`${support}`);
     
      let nb4 = new MessageButton()
     .setLabel(`Invite`)
@@ -95,12 +89,12 @@ let nhh = new MessageActionRow()
 const { channel } = message.member.voice;
          const embed1 = new MessageEmbed()
                     .setColor(color)
-                    .setDescription(`${m} Successfully joined and bound to ${  message.guild.me.voice.channel || message.member.voice.channel}\n${ba}${d} You can enable 24/7 mode by getting premium.`)
+                    .setDescription(`${m} Successfully joined and bound to ${  message.guild.me.voice.channel || message.member.voice.channel}`)
 
 
                       const embed2 = new MessageEmbed()
                     .setColor(color)
-                    .setDescription(`${m} Successfully stoped playing lofi music.\n${ba}${d} You can enable 24/7 mode by getting premium.`)
+                    .setDescription(`${m} Successfully stoped playing lofi music.`)
 
         if(b.id == "play") {
 

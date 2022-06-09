@@ -106,17 +106,6 @@ cooldown.delete(message.author.id)}, cdseconds * 1000)
 
   if (!command) command = client.commands.get(client.aliases.get(cmd));
 
-  if (command.premium) {
-    let guild = await db.get(`premium_${message.guild.id}`);
-
- let pree = new MessageEmbed()
-   .setColor('#EFB9BE')
-      .setDescription(`**${pr} This server is not premium server.**`)
-    if (!guild) {
-      return message.channel.send(pree)
-    }
-
-  }
    let ops = {
             queue: queue,
             queue2: queue2,
