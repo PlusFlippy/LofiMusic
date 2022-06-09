@@ -37,7 +37,12 @@ Find all the commands available on this panel.
     .setColor(color)
       .setThumbnail('https://images-ext-1.discordapp.net/external/I9ZqKEBG5F4M8ffRNnGU_P-ge_DBR3Jk4bLdqafXJzw/https/cdn.discordapp.com/avatars/900246137397723156/0e03b63d2867266f8c874316a90bdb0f.webp')
 
-    
+    let nb3 = new MessageButton()
+    .setLabel(`Support`)
+    .setEmoji(`937063787821953034`)
+    .setStyle("url")
+     .setURL(`${support}`);
+     
      let nb4 = new MessageButton()
     .setLabel(`Invite`)
     .setEmoji(`937180690091487343`)
